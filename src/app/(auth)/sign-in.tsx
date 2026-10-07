@@ -12,7 +12,7 @@ export default function SignInScreen() {
     const isAppleClicked = loadingStrategy === "oauth_apple";
 
     const isLoading = isGoogleClicked || isGitHubClicked || isAppleClicked;
-
+    const databaseUrl = process.env.DATABASE_URL;
     return (
         <SafeAreaView className="flex-1 bg-primary dark:bg-secondary" edges={["top"]}>
             {/* decorative elements */}
